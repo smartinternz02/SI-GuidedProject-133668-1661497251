@@ -7,8 +7,8 @@ import os
 from flask import Flask, request, render_template
 
 
-app = Flask(__name__,template_folder='Template')
-model = pickle.load(open(r'D:\trafficvolume\flask\Template','rb'))
+app = Flask(__name__,template_folder='template')
+model = pickle.load(open(r'D:\trafficvolume\flask\template\model.pkl','rb'))
 
 @app.route('/')# route to display the home page
 def index():
