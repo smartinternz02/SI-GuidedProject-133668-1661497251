@@ -8,7 +8,7 @@ from flask import Flask, request, render_template
 
 
 app = Flask(__name__,template_folder='template')
-model = pickle.load(open(r'D:\traffic volume estimation project\flask\template\model.pkl','rb'))
+model = pickle.load(open(r"D:\Traffic volume estimation project\flask\Template\model.pkl",'rb'))
 
 @app.route('/')# route to display the home page
 def index():
